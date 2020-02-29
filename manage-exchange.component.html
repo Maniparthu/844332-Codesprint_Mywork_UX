@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Lander</title>
+</head>
+<body>
+  <div>
+
+    <img style="width: 70px;height: auto;" class="rounded-circle" src="assets/images/n1.png">
+  </div>
+<!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img style="width: 200px; align-items: center;" src="assets/images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li style="margin-left: 15px;" class="nav-item ">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li style="margin-left: 15px;" class="nav-item">
+              <a class="nav-link" routerLink="/manageCompany">Place Apointment</a>
+            </li>
+            <li style="margin-left: 15px;" class="nav-item">
+                <a class="nav-link" routerLink="/manageExchange">View Apointment</a>
+            </li>
+            <li style="margin-left: 15px;" class="nav-item">
+                <a class="nav-link" routerLink="/updateIPO">Contact</a>
+            </li>
+        </ul> 
+  
+    </div>
+  </nav>
+
+    
+<!-- admin lander content -->
+<div class="row">
+  <div class="col-lg-2" style="background-color: black;">
+    <div style=" position: fixed; left: 0;width: 250px; height: 100%; ">
+      <ul>
+        <li style="color: antiquewhite;"><a href="#" style="color: antiquewhite;"><i class="far fa-question-circle" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>About</a></li>
+        <li style="color: antiquewhite;"><a href="#" style="color: antiquewhite;"><i class="fas fa-stream" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Overview</a></li>
+        <li style="color: antiquewhite;"><a href="#" style="color: antiquewhite;"><i class="fas fa-calendar-week" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Events</a></li>
+        <li style="color: antiquewhite;"><a href="#" style="color: antiquewhite;"><i class="fas fa-sliders-h" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Service</a></li>
+        <li style="color: antiquewhite;"><a href="#" style="color: antiquewhite;"><i class="far fa-envelope" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-10">
+    
+    <body onload="load3()">
+   
+      <div>
+          <h1>
+              view appointments of the trainer
+          </h1>
+          <table border="2px">
+              <tr>
+                  <th> NAME</th>
+                  <th>AGE</th>
+                  <th>EMAIL</th>
+                  <th>CONTACT NUMBER</th>
+                  <th>MONDAY APPOINTMENT</th>
+                  <th>TUESDAY APPOINTMENT</th>
+                  <th>WEDDAY APPOINTMENT</th>
+                  <th>THURSDAY APPOINTMENT</th>
+                  <th>FRIDAY APPOINTMENT</th>
+                  <th>SATURDAY APPOINTMENT</th>
+                  <th>SUNDAY APPOINTMENT</th>
+                  
+                  
+              </tr>
+              <tr>
+                  <td id="pd1"></td>
+                  <td id="pdage"></td>
+                  <td id="pdemail"></td>
+                  <td id="pdcontact"></td>
+                  <td id="pdappointmo"></td>
+                  <td id="pdappointtu"></td>
+                  <td id="pdappointwe"></td>
+                  <td id="pdappointth"></td>
+                  <td id="pdappointfr"></td>
+                  <td id="pdappointsa"></td>
+                  <td id="pdappointsu"></td>
+              </tr>
+          </table>
+      </div>          
+    </body>
+    </div>
+  </div>
+
+</body>
+</html>
